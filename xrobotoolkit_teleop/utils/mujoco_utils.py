@@ -69,8 +69,9 @@ def calc_mujoco_qpos_from_pin_q(
             pin_joint_name,
             pin_joint_value,
         )
-        if not success:
-            raise ValueError(f"Joint '{pin_joint_name}' not found in MuJoCo model.")
+        # Skip joints not found in the MuJoCo model
+        # if not success:
+        #     raise ValueError(f"Joint '{pin_joint_name}' not found in MuJoCo model.")
 
     return mujoco_qpos
 

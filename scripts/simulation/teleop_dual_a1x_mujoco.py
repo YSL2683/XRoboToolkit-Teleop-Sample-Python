@@ -35,6 +35,10 @@ def main(
                     0.0,
                 ],
             },
+            "motion_tracker": {
+                "serial": "PC2310MLKB041978G",
+                "link_target": "right_arm_link3",
+            },
         },
         "left_hand": {
             "link_name": "left_arm_link6",
@@ -53,6 +57,10 @@ def main(
                 "close_pos": [
                     0.0,
                 ],
+            },
+            "motion_tracker": {
+                "serial": "PC2310MLKB041941G",
+                "link_target": "left_arm_link3",
             },
         },
     }
